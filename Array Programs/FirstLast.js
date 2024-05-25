@@ -15,3 +15,13 @@ function Arr () {
   console.log('Last element is ' + last)
 }
 Arr() // Calling the function
+
+// Using rest operator :
+
+const array = [1, 2, 3, 4, 5]
+
+const [firstItem, ...rest] = array
+const lastItem = rest.pop()
+
+console.log('First item:', firstItem)
+console.log('Last item:', lastItem)
