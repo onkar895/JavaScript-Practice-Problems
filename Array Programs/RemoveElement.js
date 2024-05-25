@@ -42,3 +42,23 @@ console.log('Original array: ' + array)
 // Making the length of array to 0 by using splice method
 array.splice(0, array.length)
 console.log('array: ' + array)
+
+// Method 7: Remove Element from Array using for() loop and new array
+
+const removeElement = (arr, num) => {
+  let newArr = []
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== num) {
+      newArr.push(arr[i])
+    }
+  }
+  return newArr
+}
+
+let passed_arr = [1, 2, 3, 4, 5]
+let removed_ele = 3
+
+let result = removeElement(passed_arr, removed_ele)
+
+console.log('Remaining Array is', result)
