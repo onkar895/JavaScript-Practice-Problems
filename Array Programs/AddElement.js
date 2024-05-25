@@ -37,3 +37,32 @@ console.log(`Array Elements Before
 console.log(`Array Elements After
              element addition: 
              ${[32].concat(arr1)}`)
+
+// insert an item into array at specific index in JavaScript
+
+let arr2 = [5, 6, 8, 10]
+
+let index = 3
+let element = 80
+
+arr2.splice(index, 0, element)
+console.log(arr2)
+
+function insertElement () {
+  let arr = [1, 2, 3, 4, 5]
+  let index = 2
+  let element = -99
+
+  // Shift all elements one place
+  // to the back until index
+  for (let i = arr.length; i > index; i--) {
+    arr[i] = arr[i - 1]
+  }
+
+  // Insert the element at the index
+  arr[index] = element
+
+  console.log(arr)
+}
+
+insertElement()
