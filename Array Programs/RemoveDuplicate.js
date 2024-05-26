@@ -5,13 +5,9 @@
 let arr = ['apple', 'mango', 'apple',
   'orange', 'mango', 'mango']
 
-function removeDuplicates (arr) {
-  const remove = arr.filter((item,
-    index) => arr.indexOf(item) === index)
-  return remove
-}
-
-console.log(removeDuplicates(arr))
+// The filter method is used to create a new array "remove" that contains only the unique elements from "arr."
+const remove = arr.filter((item, index) => arr.indexOf(item) === index)
+console.log(remove)
 
 // Using set method :
 
@@ -27,13 +23,10 @@ console.log(removeDuplicates(arr1))
 
 let Arr = [300, 500, 200, 600, 300, 500, 1000, 250, 600]
 
-function removeDuplicate (Arr) {
-  let unique = []
-  Arr.forEach(element => {
-    if (!unique.includes(element)) {
-      unique.push(element)
-    }
-  })
-  return unique
-}
-console.log(removeDuplicate(Arr))
+let unique = []
+Arr.forEach(element => {
+  if (!unique.includes(element)) {
+    unique.push(element)
+  }
+})
+console.log(unique)
