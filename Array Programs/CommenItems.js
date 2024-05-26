@@ -36,3 +36,15 @@ function findCommonElement (array1, array2) {
 }
 
 console.log(findCommonElement(array1, array2))
+
+// Using Array.some() method :
+
+function haveCommonItems (arr1, arr2) {
+  return arr1.some(item => arr2.includes(item))
+}
+
+// Example usage
+const array3 = ['a', 'b', 'c', 'd', 'e']
+const array4 = ['f', 'g', 'c']
+const result = haveCommonItems(array3, array4)
+console.log(result); // Output: true
