@@ -12,3 +12,13 @@ function removeDuplicates (arr) {
 }
 
 console.log(removeDuplicates(arr))
+
+// Using set method :
+
+let arr1 = [2, 5, 7, 2, 8, 7, 5]
+
+function removeDuplicates (arr1) {
+  return [...new Set(arr1)]
+}
+
+console.log(removeDuplicates(arr1))
