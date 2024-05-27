@@ -11,8 +11,40 @@ console.log(Arr.sort())
 // Approach 2: Creating Loops
 
 // Using Compare Function :
-// We can create a Compare function that returns negative, zero, or positive values. 
+// We can create a Compare function that returns negative, zero, or positive values.
 
+// Declare and initialize an Array
+let marks = [12, 25, 31, 23, 75, 81, 100]
+
+// Print Before sorting array 
+console.log('Original Array')
+console.log(marks)
+
+// Sort elements using compare method 
+marks.sort(function (a, b) { return a - b })
+
+console.log('After sorting in Ascending order')
+
+// Print sorted Numeric array 
+console.log(marks)
+
+// Now, we would like to sort the array in Descending order then we have to change the compare function.
+// Declare and initialize an Array
+let marks1 = [12, 25, 31, 23, 75, 81, 100]
+
+// Print Before sorting array 
+console.log('Original Array')
+console.log(marks1)
+
+// Sort elements using compare method 
+marks1.sort(function (a, b) { return b - a })
+
+console.log('After sorting in Descending order')
+
+// Print sorted Numeric array 
+console.log(marks1)
+
+// Approach 2: Creating Loops :
 // Here, we will use bubble sort (a simple sorting technique) to sort the array elements in ascending order.
 
 // Sorting function
