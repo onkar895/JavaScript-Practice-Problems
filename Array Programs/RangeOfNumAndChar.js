@@ -11,5 +11,17 @@ function generateNumber (num1, num2) {
   return result
 }
 
-const result = generateNumber(1, 8)
+const result1 = generateNumber(1, 8)
+console.log(result1)
+
+const startChar = 'A'
+const endChar = 'G'
+const result = []
+
+for (let charCode = startChar.charCodeAt(0);
+  charCode <= endChar.charCodeAt(0);
+  charCode++) {
+  result.push(String.fromCharCode(charCode))
+}
+
 console.log(result)
